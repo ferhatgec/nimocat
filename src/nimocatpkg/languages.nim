@@ -124,3 +124,55 @@ proc CPlusPlus*(line: string): void =
     data = data.replace("&", WBOLD_LIGHT_YELLOW_COLOR & "&" & WBOLD_WHITE_COLOR)
     
     echo data
+    
+proc FlaScript*(line: string): void = 
+    var data = line.replace("int", WBOLD_RED_COLOR & "int" & WBOLD_WHITE_COLOR)
+    data = data.replace("var", WBOLD_BLUE_COLOR & "var" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("string", WBOLD_BLUE_COLOR & "string" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("if", WBOLD_LIGHT_RED_COLOR & "if" & WBOLD_WHITE_COLOR)
+    data = data.replace("else", WBOLD_LIGHT_RED_COLOR & "else" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("for", WBOLD_MAGENTA_COLOR & "for" & WBOLD_WHITE_COLOR)
+    data = data.replace("do", WBOLD_MAGENTA_COLOR & "do" & WBOLD_WHITE_COLOR)
+    data = data.replace("while", WBOLD_MAGENTA_COLOR & "while" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("func", WBOLD_RED_COLOR & "func" & WBOLD_WHITE_COLOR)
+    data = data.replace("main", WBOLD_LIGHT_RED_COLOR & "main" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("@append", WBOLD_LIGHT_YELLOW_COLOR & "@append" & WBOLD_WHITE_COLOR)
+    data = data.replace("@pop_back", WBOLD_LIGHT_YELLOW_COLOR & "@pop_back" & WBOLD_WHITE_COLOR)
+    data = data.replace("@between", WBOLD_LIGHT_YELLOW_COLOR & "@between" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("import", WBOLD_YELLOW_COLOR & "import" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("defin", WBOLD_MAGENTA_COLOR & "defin" & WBOLD_WHITE_COLOR)
+    data = data.replace("put", WBOLD_MAGENTA_COLOR & "put" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("#ifdef", WBOLD_MAGENTA_COLOR & "#ifdef" & WBOLD_WHITE_COLOR)
+    data = data.replace("#endif", WBOLD_MAGENTA_COLOR & "#endif" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("return", WBOLD_LIGHT_MAGENTA_COLOR & "return" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("SystemInfo", WBOLD_LIGHT_MAGENTA_COLOR & "SystemInfo" & WBOLD_WHITE_COLOR)
+    data = data.replace("Colorized", WBOLD_LIGHT_MAGENTA_COLOR & "Colorized" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("newline", WBOLD_LIGHT_BLACK_COLOR & "newline" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("print", WBOLD_CYAN_COLOR & "print" & WBOLD_WHITE_COLOR)
+    data = data.replace("fprintf", WBOLD_CYAN_COLOR & "fprintf" & WBOLD_WHITE_COLOR)
+    data = data.replace("@echo", WBOLD_CYAN_COLOR & "@echo" & WBOLD_WHITE_COLOR)
+    data = data.replace("fprintln", WBOLD_CYAN_COLOR & "fprintln" & WBOLD_WHITE_COLOR)
+
+    data = data.replace("::", WBOLD_LIGHT_YELLOW_COLOR & "::" & WBOLD_WHITE_COLOR)
+    data = data.replace("{", WBOLD_LIGHT_YELLOW_COLOR & "{" & WBOLD_WHITE_COLOR)
+    data = data.replace("}", WBOLD_LIGHT_YELLOW_COLOR & "}" & WBOLD_WHITE_COLOR)
+    data = data.replace("(", WBOLD_LIGHT_YELLOW_COLOR & "(" & WBOLD_WHITE_COLOR)
+    data = data.replace(")", WBOLD_LIGHT_YELLOW_COLOR & ")" & WBOLD_WHITE_COLOR)
+    data = data.replace("*", WBOLD_LIGHT_YELLOW_COLOR & "*" & WBOLD_WHITE_COLOR)
+    data = data.replace("<", WBOLD_LIGHT_YELLOW_COLOR & "<" & WBOLD_WHITE_COLOR)
+    data = data.replace(">", WBOLD_LIGHT_YELLOW_COLOR & ">" & WBOLD_WHITE_COLOR)
+    data = data.replace("&", WBOLD_LIGHT_YELLOW_COLOR & "&" & WBOLD_WHITE_COLOR)
+    
+    echo data

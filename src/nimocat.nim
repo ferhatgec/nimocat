@@ -15,6 +15,9 @@ proc ReadFile(filename: string): void =
     if filename.contains(".cpp"):
         for line in lines filename:
             languages.CPlusPlus(line)
+    elif filename.contains(".fls"):
+        for line in lines filename:
+            languages.FlaScript(line)
     else:
         for line in lines filename:
             languages.Regular(line)
