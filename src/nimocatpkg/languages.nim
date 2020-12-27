@@ -8,6 +8,31 @@
 import strutils
 import colorized
 
+proc Regular*(line: string): void =
+    var data = line.replace("int", WBOLD_RED_COLOR & "int" & WBOLD_WHITE_COLOR)
+  
+    data = data.replace("long", WBOLD_BLUE_COLOR & "long" & WBOLD_WHITE_COLOR)
+    data = data.replace("char", WBOLD_BLUE_COLOR & "char" & WBOLD_WHITE_COLOR)
+    data = data.replace("const", WBOLD_LIGHT_BLUE_COLOR & "const" & WBOLD_WHITE_COLOR)
+    
+    data = data.replace("void", WBOLD_RED_COLOR & "void" & WBOLD_WHITE_COLOR)
+
+    # TODO:
+    # Create token() function & add these tokens
+    #
+    
+    data = data.replace("::", WBOLD_LIGHT_YELLOW_COLOR & "::" & WBOLD_WHITE_COLOR)
+    data = data.replace("{", WBOLD_LIGHT_YELLOW_COLOR & "{" & WBOLD_WHITE_COLOR)
+    data = data.replace("}", WBOLD_LIGHT_YELLOW_COLOR & "}" & WBOLD_WHITE_COLOR)
+    data = data.replace("(", WBOLD_LIGHT_YELLOW_COLOR & "(" & WBOLD_WHITE_COLOR)
+    data = data.replace(")", WBOLD_LIGHT_YELLOW_COLOR & ")" & WBOLD_WHITE_COLOR)
+    data = data.replace("*", WBOLD_LIGHT_YELLOW_COLOR & "*" & WBOLD_WHITE_COLOR)
+    data = data.replace("<", WBOLD_LIGHT_YELLOW_COLOR & "<" & WBOLD_WHITE_COLOR)
+    data = data.replace(">", WBOLD_LIGHT_YELLOW_COLOR & ">" & WBOLD_WHITE_COLOR)
+    data = data.replace("&", WBOLD_LIGHT_YELLOW_COLOR & "&" & WBOLD_WHITE_COLOR)
+
+    echo data
+    
 proc CPlusPlus*(line: string): void =
     var data = line.replace("int", WBOLD_RED_COLOR & "int" & WBOLD_WHITE_COLOR)
 

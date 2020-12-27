@@ -2,6 +2,6 @@
 
 nim compile src/nimocat.nim
 
-./src/nimocat
+./src/nimocat test.cpp
 
 

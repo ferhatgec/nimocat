@@ -17,7 +17,7 @@ proc ReadFile(filename: string): void =
             languages.CPlusPlus(line)
     else:
         for line in lines filename:
-            echo line
+            languages.Regular(line)
 
 proc HelpFunction(argument: string): void =
     stdout.write WBOLD_RED_COLOR, "Fegeya " 
